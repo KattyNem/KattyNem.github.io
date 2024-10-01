@@ -9,7 +9,7 @@
 #
 # driver.implicitly_wait(5)
 # driver.get("https://practice.automationtesting.in/")
-
+#
 # MyAccount_btn = driver.find_element_by_id("menu-item-50")
 # MyAccount_btn.click()
 #
@@ -46,5 +46,4 @@ Password.send_keys("13011989Kat@")
 Login = driver.find_element_by_css_selector(".login > p:nth-child(3) > .button")
 Login.click()
 
-Logout_btn = driver.find_element_by_link_text("Logout")
-Logout_btn.click()
+Logout_check = WebDriverWait(driver, 10).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".woocommerce-MyAccount-navigation-link--customer-logout > a"), "Logout"))
