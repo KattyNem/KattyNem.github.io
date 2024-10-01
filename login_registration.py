@@ -1,15 +1,15 @@
-import time
-from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-driver = webdriver.Chrome(executable_path='C:/chromedriver.exe')
-driver.maximize_window()
+#Задание: регистрация аккаунта
+# import time
+# from selenium import webdriver
+# from selenium.webdriver.support.ui import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
+# from selenium.webdriver.common.by import By
+# driver = webdriver.Chrome(executable_path='C:/chromedriver.exe')
+# driver.maximize_window()
+#
+# driver.implicitly_wait(5)
+# driver.get("https://practice.automationtesting.in/")
 
-driver.implicitly_wait(5)
-driver.get("https://practice.automationtesting.in/")
-
-#register
 # MyAccount_btn = driver.find_element_by_id("menu-item-50")
 # MyAccount_btn.click()
 #
@@ -22,8 +22,18 @@ driver.get("https://practice.automationtesting.in/")
 # Register = driver.find_element_by_css_selector(".woocomerce-FormRow >.button")
 # Register.click()
 
-#login
+#Задание: логин в систему
 
+import time
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+driver = webdriver.Chrome(executable_path='C:/chromedriver.exe')
+driver.maximize_window()
+
+driver.implicitly_wait(5)
+driver.get("https://practice.automationtesting.in/")
 MyAccount_btn = driver.find_element_by_id("menu-item-50")
 MyAccount_btn.click()
 
